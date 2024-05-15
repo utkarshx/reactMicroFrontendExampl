@@ -13,7 +13,7 @@ const App = () => {
   const handleClick = () => {
     dispatch({ type: 'CHANGE_TEXT', payload: 'Clicked' });
   };
-  
+
   return(
   <div className="text-3xl mx-auto max-w-6xl">
     <Header />
@@ -25,7 +25,9 @@ const App = () => {
       />
       <h5 class="text-xl font-medium leading-tight mb-2">John Doe</h5>
       <p class="text-gray-500">Web designer</p>
-      <button onClick={handleClick}>Change Header Text</button>
+      <button onClick={handleClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Change Header Text
+      </button>
     </div>
     <Footer />
   </div>
